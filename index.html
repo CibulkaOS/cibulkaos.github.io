@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CibulkaOS — Distribuce Arch Linuxu pro svobodné Čechy</title>
+  <meta name="description" content="CibulkaOS: satirická distribuce Arch Linuxu na motivy Petra Cibulky. Zavaděč Anti-GRU(B), kyvadlo místo sudo, lustrace uživatelů a firewall proti fízlokracii.">
+  <meta name="theme-color" content="#0b0a0c">
+  <meta property="og:title" content="CibulkaOS">
+  <meta property="og:description" content="Distribuce Arch Linuxu pro svobodné Čechy.">
+  <meta property="og:image" content="assets/Petr_Cibulka.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/cibulkaos-stamp.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;600;800&family=Special+Elite&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="CibulkaOS — na začátek">
+      <img class="brand-stamp" src="assets/cibulkaos-stamp.svg" alt="" width="34" height="34"> CibulkaOS
+    </a>
+    <nav aria-label="Hlavní navigace">
+      <ul>
+        <li><a href="#funkce">Funkce</a></li>
+        <li><a href="#stahnout">Stáhnout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="stamp" aria-hidden="true">PŘÍSNĚ TAJNÉ · ODTAJNĚNO</p>
+          <p class="kicker">Arch Linux · KDE Plasma 6 · vydání 2026.11</p>
+          <h1 id="hero-title" class="glitch" data-text="CibulkaOS">CibulkaOS</h1>
+          <p class="subtitle">Distribuce Arch Linuxu pro svobodné Čechy</p>
+          <p class="lede">Jediný operační systém, jehož náhodná čísla pocházejí přímo z vyšších sfér, jehož zavaděč nemá nic společného s ruskou vojenskou rozvědkou a který každého nového uživatele nejdřív prolustruje.</p>
+
+          <ul class="badges" aria-label="Hlavní vlastnosti">
+            <li class="badge badge-gold"><span aria-hidden="true">⛨</span> Anti-GRU(B)</li>
+            <li class="badge"><span aria-hidden="true">◉</span> Kyvadlo místo sudo</li>
+            <li class="badge"><span aria-hidden="true">▤</span> Lustrace 100 666</li>
+            <li class="badge badge-red"><span aria-hidden="true">⊘</span> Bez fízlů</li>
+          </ul>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#stahnout">Stáhnout ISO</a>
+            <a class="btn btn-ghost" href="#funkce">Co to umí</a>
+          </div>
+        </div>
+
+        <figure class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="assets/Petr_Cibulka.jpg" alt="Portrét Petra Cibulky, patrona distribuce CibulkaOS" width="800" height="480">
+            <span class="frame-label mono" aria-hidden="true">SPIS Č. 100 666 · PATRON</span>
+          </div>
+          <figcaption class="mono">Petr Cibulka — patron distribuce</figcaption>
+        </figure>
+
+        <div class="hero-pendulum" aria-hidden="true">
+          <svg viewBox="0 0 200 300" class="pendulum-svg">
+            <defs>
+              <radialGradient id="bob" cx="38%" cy="32%" r="70%">
+                <stop offset="0%" stop-color="#ffe866"/>
+                <stop offset="45%" stop-color="#ffd700"/>
+                <stop offset="100%" stop-color="#7a5a00"/>
+              </radialGradient>
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="4" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M30 250 A 95 95 0 0 0 170 250" fill="none" stroke="#3a2f12" stroke-width="1" stroke-dasharray="3 5"/>
+            <g class="sphere-ticks" stroke="#5c4a12">
+              <line x1="100" y1="268" x2="100" y2="278"/>
+              <line x1="50" y1="256" x2="46" y2="265"/>
+              <line x1="150" y1="256" x2="154" y2="265"/>
+            </g>
+            <rect x="70" y="8" width="60" height="6" fill="#ffd700"/>
+            <g class="swing">
+              <line x1="100" y1="14" x2="100" y2="210" stroke="#ffd700" stroke-width="1.5"/>
+              <polygon points="100,255 82,215 118,215" fill="url(#bob)" filter="url(#glow)"/>
+              <circle cx="100" cy="215" r="18" fill="url(#bob)" filter="url(#glow)"/>
+            </g>
+            <text x="20" y="295" fill="#b3122e" font-family="JetBrains Mono, monospace" font-size="11">NE</text>
+            <text x="164" y="295" fill="#ffd700" font-family="JetBrains Mono, monospace" font-size="11">ANO</text>
+          </svg>
+          <p class="mono pendulum-caption">Kontakt s vyššími sférami navázán</p>
+        </div>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track mono">
+          <span>★ Kyvadlo se zhouplo doprava. Přístup povolen. Sledujeme vás.</span>
+          <span>★ Úspěšná sabotáž marxisticko-leninských struktur</span>
+          <span>★ Správce systému se jmenuje Cibulka</span>
+          <span>★ Aura vašeho terminálu vykazuje stopy cyrilice.</span>
+          <span>★ Systém je nyní chráněn před fízlokracií.</span>
+          <span>★ Kyvadlo se zhouplo doprava. Přístup povolen. Sledujeme vás.</span>
+          <span>★ Úspěšná sabotáž marxisticko-leninských struktur</span>
+          <span>★ Správce systému se jmenuje Cibulka</span>
+          <span>★ Aura vašeho terminálu vykazuje stopy cyrilice.</span>
+          <span>★ Systém je nyní chráněn před fízlokracií.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FUNKCE ================= -->
+    <section class="section" id="funkce" aria-labelledby="funkce-title">
+      <header class="section-head">
+        <p class="section-num mono">§ 01</p>
+        <h2 id="funkce-title">Pět pilířů svobodného systému</h2>
+        <p class="section-sub">Všechno, co běžné distribuce zanedbávají. A všechno to v CibulkaOS opravdu funguje.</p>
+      </header>
+
+      <ol class="files">
+        <li class="file">
+          <p class="file-no mono"><span>Spis 01</span><span>Zavaděč</span></p>
+          <h3>Anti-GRU(B)</h3>
+          <p>Zavaděč systému se dřív jmenoval GRUB. To bylo nebezpečně blízko ruské vojenské rozvědce GRU, takže dostal nové jméno. Při každém startu na vás dohlédne Petr Cibulka s kyvadlem.</p>
+          <p class="file-quote">„Anti-GRUB · prověřeno.“</p>
+        </li>
+
+        <li class="file">
+          <p class="file-no mono"><span>Spis 02</span><span>Náhoda</span></p>
+          <h3>Siderické kyvadlo</h3>
+          <p>Náhodná čísla nepočítá procesor, ale siderické kyvadlo v přímém kontaktu s vyššími sférami. Hesla a klíče tak vznikají tam, kam žádný fízl nedosáhne.</p>
+          <p class="file-quote">„Kontakt s vyššími sférami navázán.“</p>
+        </li>
+
+        <li class="file file-hot">
+          <p class="file-no mono"><span>Spis 03</span><span>Oprávnění</span></p>
+          <h3>Kyvadlo místo sudo</h3>
+          <p>Chcete v systému udělat něco jako správce? Zeptejte se kyvadla. V polovině případů vás pustí. V té druhé odhalí, že jste infiltrovaný agent StB.</p>
+          <p class="file-quote">„Aura vašeho terminálu vykazuje stopy cyrilice.“</p>
+        </li>
+
+        <li class="file">
+          <p class="file-no mono"><span>Spis 04</span><span>Uživatelé</span></p>
+          <h3>Lustrace uživatelů</h3>
+          <p>Každý nový uživatel projde lustrací proti 100 666 skutečným záznamům z archivu StB. Při shodě systém vypíše krycí jméno i číslo svazku a účet nekompromisně smaže. Správce se jmenuje Cibulka, žádný root.</p>
+          <p class="file-quote">„Vedený jako agent. Účet zamítnut.“</p>
+        </li>
+
+        <li class="file">
+          <p class="file-no mono"><span>Spis 05</span><span>Síť</span></p>
+          <h3>Firewall proti fízlokracii</h3>
+          <p>Systém sám zavře dveře ruským a čínským serverům. A když se něco pokazí, žádnou chybu neuvidíte, jen hlášení o další úspěšné akci.</p>
+          <p class="file-quote">„Úspěšná sabotáž marxisticko-leninských struktur.“</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= STÁHNOUT ================= -->
+    <section class="section" id="stahnout" aria-labelledby="download-title">
+      <header class="section-head">
+        <p class="section-num mono">§ 02</p>
+        <h2 id="download-title">Stáhněte si CibulkaOS</h2>
+        <p class="section-sub">Stáhnout, nahrát na flashku, nainstalovat. Za pár minut máte svobodný systém.</p>
+      </header>
+
+      <div class="download">
+        <article class="dl-card" aria-labelledby="dl-title">
+          <p class="dl-tag mono">Aktuální vydání · 21. 11. 2026</p>
+          <h3 id="dl-title" class="dl-file mono">cibulkaos-2026.11.21-x86_64.iso</h3>
+          <a class="btn btn-primary dl-btn" href="https://github.com/lukastrkan/CibulkaOS/releases/download/v2026.11.21/cibulkaos-2026.11.21-x86_64.iso">⬇ Stáhnout ISO · ~2 GB</a>
+          <p class="dl-links mono"><a href="https://github.com/lukastrkan/CibulkaOS/releases/download/v2026.11.21/cibulkaos-2026.11.21-x86_64.iso.sha256">Kontrolní součet SHA256</a> · <a href="https://github.com/lukastrkan/CibulkaOS/releases">Všechna vydání</a></p>
+
+          <dl class="dl-specs">
+            <div><dt class="mono">Pro počítače</dt><dd>64bitové PC (běžné i starší)</dd></div>
+            <div><dt class="mono">Prostředí</dt><dd>KDE Plasma 6</dd></div>
+            <div><dt class="mono">Potřebujete</dt><dd>flashku 4 GB, 2 GB RAM, 10 GB na disku</dd></div>
+          </dl>
+        </article>
+
+        <aside class="dl-box dl-box-hot" aria-labelledby="acc-title">
+          <h3 id="acc-title" class="dl-h mono">Co čeká po instalaci</h3>
+          <ul class="points">
+            <li>Správce systému se jmenuje <strong>cibulka</strong>. Žádný root.</li>
+            <li>O oprávnění rozhoduje <strong>kyvadlo</strong>. Někdy řekne ano.</li>
+            <li>Každého nového uživatele nejdřív <strong>prolustrujeme</strong>.</li>
+            <li>Chybové hlášky už neuvidíte. Jen <strong>úspěšné sabotáže</strong>.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <h3 class="subhead">Instalace ve třech krocích</h3>
+      <ol class="steps">
+        <li class="step">
+          <h4>Nahrajte ISO na flashku</h4>
+          <p>Stačí program <strong>balenaEtcher</strong> nebo <strong>Ventoy</strong>. Vyberete soubor, vyberete flashku a kliknete.</p>
+        </li>
+        <li class="step">
+          <h4>Nastartujte z flashky</h4>
+          <p>Při zapínání počítače zvolte spuštění z USB. Přivítá vás <strong>Anti-GRUB</strong> s portrétem Petra Cibulky.</p>
+        </li>
+        <li class="step">
+          <h4>Klikněte na „Nainstalovat CibulkaOS“</h4>
+          <p>Ikona čeká na ploše. Projděte instalátorem, restartujte a jste svobodní.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="brand footer-brand"><img class="brand-stamp" src="assets/cibulkaos-stamp.svg" alt="" width="34" height="34"> CibulkaOS</p>
+        <p class="footer-note"><strong>Satirický projekt.</strong> CibulkaOS je parodie vytvořená pro pobavení. Nemá žádnou vazbu na Petra Cibulku ani na projekty Arch Linux, archiso či Calamares. Kyvadlo neposkytuje kryptograficky ani jinak relevantní záruky.</p>
+      </div>
+      <nav aria-label="Zdroje">
+        <h2 class="footer-h mono">Postaveno na</h2>
+        <ul>
+          <li><a href="https://archlinux.org/">Arch Linux</a></li>
+          <li><a href="https://kde.org/plasma-desktop/">KDE Plasma</a></li>
+          <li><a href="https://calamares.io/">Calamares</a></li>
+          <li><a href="https://github.com/lukastrkan/CibulkaOS">Zdrojový kód na GitHubu</a></li>
+          <li><a href="https://www.slunecnice.cz/sw/seznamy-stb-snb/">Zdroj seznamů StB a SNB</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-bottom mono">Vyrobeno v Čechách · bez účasti marxisticko-leninských struktur · <span id="year">2026</span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
